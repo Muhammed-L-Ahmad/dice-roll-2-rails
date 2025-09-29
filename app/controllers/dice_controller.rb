@@ -6,11 +6,12 @@ class DiceController < ApplicationController
       new_roll = rand(1..6)
 
       @dice_rolls.push(new_roll)
+    end
 
     render ({ :template => "dice_templates/2d6"})
     
   end
-end
+
 
   def two_ten
     @dice_rolls = Array.new
@@ -19,10 +20,10 @@ end
       new_roll = rand(1..10)
 
       @dice_rolls.push(new_roll)
+    end
 
     render ({ :template => "dice_templates/2d10"})
   end
-end
 
   def five_four
     @dice_rolls = Array.new
@@ -31,11 +32,11 @@ end
       new_roll = rand(1..4)
 
       @dice_rolls.push(new_roll)
-
+    end
 
     render ({ :template => "dice_templates/5d4"})
   end
-end
+
 
   def one_twenty
     @dice_rolls = Array.new
@@ -44,10 +45,10 @@ end
       new_roll = rand(1..20)
 
       @dice_rolls.push(new_roll)
+    end
 
     render ({ :template => "dice_templates/1d20"})
   end
-end
 
   def home
     render ({ :template => "dice_templates/home"})
