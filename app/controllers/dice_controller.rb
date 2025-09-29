@@ -10,6 +10,7 @@ class DiceController < ApplicationController
     render ({ :template => "dice_templates/2d6"})
     
   end
+end
 
   def two_ten
     @dice_rolls = Array.new
@@ -21,6 +22,7 @@ class DiceController < ApplicationController
 
     render ({ :template => "dice_templates/2d10"})
   end
+end
 
   def five_four
     @dice_rolls = Array.new
@@ -33,6 +35,7 @@ class DiceController < ApplicationController
 
     render ({ :template => "dice_templates/5d4"})
   end
+end
 
   def one_twenty
     @dice_rolls = Array.new
@@ -44,6 +47,7 @@ class DiceController < ApplicationController
 
     render ({ :template => "dice_templates/1d20"})
   end
+end
 
   def home
     render ({ :template => "dice_templates/home"})
